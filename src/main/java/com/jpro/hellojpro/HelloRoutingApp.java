@@ -4,6 +4,8 @@ import com.jpro.hellojpro.page.FXMLPage;
 import com.jpro.hellojpro.page.InfoPage;
 import com.jpro.hellojpro.page.LandingPage;
 import com.jpro.webapi.WebAPI;
+
+import fr.brouillard.oss.cssfx.CSSFX;
 import one.jpro.routing.Route;
 import one.jpro.routing.RouteApp;
 import one.jpro.routing.RouteUtils;
@@ -11,8 +13,11 @@ import one.jpro.routing.RouteUtils;
 public class HelloRoutingApp extends RouteApp {
     @Override
     public Route createRoute() {
+        CSSFX.start(getStage());
 
-        getScene().getStylesheets().add(getClass().getResource("/com/jpro/hellojpro/css/HelloJPro.css").toString());
+        System.out.println("path: "+ getClass().getResource("/com/jpro/hellojpro/css/HelloJPro.css").toExternalForm());
+
+        getScene().getStylesheets().add(getClass().getResource("/com/jpro/hellojpro/css/HelloJPro.css").toExternalForm());
 
         return Route.empty()
             .and(RouteUtils.redirect("/", "/landing"))

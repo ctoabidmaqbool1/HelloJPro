@@ -1,5 +1,5 @@
 .root {
-    -fx-background-color: white;
+    -fx-background-color: rgb(41, 28, 28);
 }
 
 .page-outer-vbox {
@@ -42,18 +42,18 @@
 }
 
 .big-cell {
-  -fx-background-color: green;
+  -fx-background-color: rgb(10, 26, 10);
   -fx-pref-width: 300;
   -fx-min-height: 240;
   -fx-font-size: 32;
 }
 
 .big-cell-1 {
-  -fx-background-color: orange;
+  -fx-background-color: rgb(204, 139, 19);
 }
 
 .big-cell-2 {
-  -fx-background-color: lightgreen;
+  -fx-background-color: rgb(6, 7, 6);
 }
 
 .big-cell-3 {
